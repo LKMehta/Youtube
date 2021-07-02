@@ -4,16 +4,16 @@ import Link from 'next/link'
 export default function Home() {
   return (
      <div>
-      Welcome to my Application
+      Video Archive Repository
       <ul>
         <li>
-          <Link href="/component/addYouTubeUrl">
-            <a>AddYouTubeUrl</a>
+          <Link href="/component/addYouTubeVideo">
+            <a>Add YouTube Video</a>
           </Link>
         </li>
         <li>
           <Link href="/component/playLatestVideo" >
-            <a>PlayLatestVideo</a>
+            <a>Play Latest Video</a>
           </Link>
         </li>
       </ul>

@@ -28,7 +28,7 @@ export default async function youtube(req, res) {
 }
 
 function sortInDescOrder(a, b) {
-    var date1 = new Date(a.timestamp); // some mock date
+    var date1 = new Date(a.timestamp);
     var date2 = new Date(b.timestamp)
    
     if (date1.getTime() < date2.getTime()) {
