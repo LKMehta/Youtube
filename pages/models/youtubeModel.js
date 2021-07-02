@@ -5,8 +5,8 @@ const {Schema} = mongoose;
 const youtubeSchema = new Schema(
     {
         url: {type:String},
-        timestamp: {type:Date, default: new Date()},
+        timestamp: {type:Date},
     }
 );
 
-module.exports = mongoose.model('YouTube', youtubeSchema)
+module.exports = mongoose.models.YouTube || mongoose.model('YouTube', youtubeSchema)
